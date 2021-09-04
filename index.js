@@ -31,7 +31,7 @@ const connectWithRetry = () => {
         })
 
     app.get('/', (req, res) => {
-        res.send('<h2>Hi xxxx!!!</h2>')
+        res.send('<h2>Hi thereee!!!</h2>')
     })
 }
 
