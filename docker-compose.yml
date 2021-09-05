@@ -10,6 +10,7 @@
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
+    image: jaylupos/node-app
     depends_on:
       - mongo
 
