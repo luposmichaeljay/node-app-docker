@@ -29,10 +29,6 @@ const connectWithRetry = () => {
             console.log('error connecting to DB.')
             setTimeout(connectWithRetry, 5000);
         })
-
-    app.get('/', (req, res) => {
-        res.send('<h2>Hi thereee!!!</h2>')
-    })
 }
 
 connectWithRetry()
@@ -53,7 +49,7 @@ app.use(express.json())
 app.use('/api/v1/users', userRouter)
 app.use('/api/v1/posts', postRouter)
 app.get('/api/v1', (req, res) => {
-    res.send('<h1>wow</h1>')
+    res.send('<h1>Hi there!</h1>')
     console.log('yep');
 })
 app.listen(port, () => console.log(`listing on port ${port}`))
